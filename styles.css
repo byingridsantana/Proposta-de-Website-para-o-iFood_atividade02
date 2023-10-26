@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+  
+  header {
+    background-color: #f5f0eb; 
+    color: #6f6d6c; 
+    padding: 10px 0; 
+}
+
+
+/* Estilo do contêiner */
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* Estilo do logo */
+
+.logo img {
+    width: 100px; 
+    height: auto; 
+    margin-left: -200px;
+}
+
+/* Estilo do menu de navegação */
+
+.menu nav ul {
+    list-style: none; 
+    display: flex; 
+}
+
+.menu nav ul li {
+    margin-right: 50px; 
+}
+
+.menu nav ul li:last-child {
+    margin-right: 0;
+}
+
+.menu nav ul li a {
+    color: #3F3E3E; 
+    text-decoration: none;
+    font-weight: normal;
+    position: relative; 
+    transition: 0.2s; 
+
+}
+
+.menu nav ul li a:hover {
+    border-bottom: 2px solid #EA1D2C; 
+    
+}
+
+
+.inicio {
+    background: url('Assets/Imagens/Inicio/alimentacao.png') center/cover no-repeat; 
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    color: #EA1D2C;
+}
+
+.inicio-content {
+    background-color: rgba(255, 255, 255, 0); 
+    padding: 150px;
+    border-radius: 10px;
+}
+
+.inicio-text h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.inicio-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color:#3F3E3E
+    
+}
+
+.botton {
+    display: inline-block;
+    background-color: #EA1D2C; 
+    color: #fff;
+    padding: 10px 30px;
+    margin: 40px 0px 0px 150px;
+    text-decoration: none;
+    border-radius: 5px; 
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.botton:hover {
+    background-color: #9C050B; 
+}
+
+/* Cardapio */
+
+.cardapio {
+    display: flex;
+    justify-content: space-around; 
+    padding: 50px 0px 200px;
+    text-align: center;
+    
+}
+
+.cardapio h2 {
+    color: #EA1D2C;    
+}
+
+/* Estilo para os cards de pratos */
+
+.melhorespedidos {
+    margin: 60px 0;
+    text-align: center;
+    color: #EA1D2C;
+    font-size: 35px;
+}
+
+.cards {
+    width: 400px;
+    margin: 0 20px;     
+    background-color: #fafafa; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center; 
+    overflow: hidden;
+    box-shadow: 0px 0px 8px 0px rgba(201, 201, 201, 0.5);
+}
+
+.cards:hover {
+    transform: translateY(-5px); 
+}
+
+.cards img {
+    width: 100%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+
+.cards h2 {
+    margin: 10px 0;
+    align-items: center;
+    color:#9c050b
+}
+
+.cards h3 {
+    margin: 10px 0;
+    align-items: center;
+    color:#3F3E3E
+}
+
+
+.cards p {
+    font-size: 14px;
+    color:#3F3E3E
+}
+
+
+/* Estilo para a seção de Como Funciona */
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(248, 248, 248, 0.493);
+    height: 800px;
+}
+
+/* Estilo para o texto */
+
+.texto {
+    flex: 1;
+    text-align: left;
+    margin-right: 370px;
+    margin-left: 300px;
+    color: #3F3E3E;
+    line-height: 1.5;
+}
+
+.texto h2 {
+    color: #EA1D2C;
+    margin-bottom: 60px;
+    font-size: 35px;
+}
+
+/* Estilo para a imagem */
+
+.imagem img {
+    width: 100%; 
+    max-width: 550px; 
+    height: auto;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+
+/* Estilo para Sobre nós */
+
+.sobre-nos {
+    flex: 1;
+    text-align: center;
+    margin-right: 370px;
+    margin-left: 300px;
+    margin-top: 100px;
+    color: #3F3E3E;
+    height: 500px;
+
+}
+
+.sobre-nos h2 {
+    font-size: 35px;
+    margin-bottom: 60px;
+    color: #EA1D2C;
+}
+
+.sobre-nos p {
+    
+    line-height: 1.5;
+    color: #333;
+}
+
+/*Formulario */
+
+ /* Estilo para a seção de contato */
+
+.contato {
+    margin: 0px 0;
+    text-align: center; 
+    color: #EA1D2C;
+    font-size: 35px;
+    margin-top: 150px;
+    margin-right: 90px;
+    
+}
+
+.comoPodemosAjudar {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+
+/* Estilo para o contêiner do formulário e da imagem */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    margin-top: -50px;
+    
+    
+}
+
+/* Estilo para o conteúdo do formulário */
+
+.form-content {
+    padding: 20px;
+    text-align: left;
+    
+}
+
+/* Estilo para os campos de entrada e textarea */
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo para o botão de enviar */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 800px;
+    margin-left: 500px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para o conteúdo do formulário */
+
+.form-content {
+    padding: 20px;
+    text-align: left;
+    flex: 1; 
+   
+}
+
+.form-content h3 {
+    padding: 30px;
+    text-align: center;
+    flex: 1; 
+    color:#EA1D2C
+   
+}
+
+/* Estilo para a imagem lateral */
+
+.form-image img {
+    width: 90%;
+    border-radius: 15px 0 0 15px;
+}
+
+/*botão */
+
+button[type="submit"] {
+    background-color: #ff3333; 
+    color: white; 
+    border: 1px solid #ff3333; 
+    padding: 15px 30px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s; 
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #9C050B; 
+    border-color: #9C050B; 
+}
+
+/* Footer */
+
+
+footer {
+    background-color: #3f3e3e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    height: 100px;
+    margin-top: 150px;
+}
+
+footer a {
+    color: white; 
+    text-decoration: none; 
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 15px;
+    color: #FFFFFF;
+}
+
